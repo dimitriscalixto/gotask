@@ -18,6 +18,7 @@ export class ModalControllerService {
     return this._dialog.open<ITaskFormControls>(TaskFormModalComponent, {
       ...this.modalSizeOptions,
       disableClose: true,
+      autoFocus: false,
       data: {
         mode: 'create',
         formValues: {
@@ -32,6 +33,7 @@ export class ModalControllerService {
     return this._dialog.open<ITaskFormControls>(TaskFormModalComponent, {
       ...this.modalSizeOptions,
       disableClose: true,
+      autoFocus: false,
       data: {
         mode: 'edit',
         formValues,
